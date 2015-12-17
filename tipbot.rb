@@ -29,8 +29,8 @@ class Tipbot
         # direct message ok to proceed
       elsif data['text'] =~ /^<@/ && data['text'] =~ /^<@#{tipbot_user_id}/
         # user prefixed message with @tipbot
-      elsif data['text'] =~ /^tip/i
-        # prefixed with 'tip' or 'Tip'
+      elsif data['text'] =~ /^tip /i
+        # prefixed with 'tip ' or 'Tip '
       else
         # message we can ignore
         next
